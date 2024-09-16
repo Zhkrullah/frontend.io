@@ -1,0 +1,228 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f5f5f525;
+    font-family: "Red Hat Text", sans-serif;
+}
+h1 {
+    margin: 20px;
+}
+main {
+
+margin-top: 50px;
+}
+.section-1, .section-2, .section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   row-gap: 120px;
+   column-gap: 30px;
+   margin-top: 20px;
+}
+.card-container {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 50px;
+    cursor: pointer;
+    
+}
+.card-image {
+    padding: 15px;
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.card-image:hover {
+    transform: translateY(-10px);
+    transition: all ease-out 1s;
+}
+
+.card-image  img{
+    filter: drop-shadow(0px 10px 20px #4a4a6d);
+}
+.product-image-1, .product-image-2 {
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+.add-to-cart, .add-to-cart-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+.add-to-cart {
+    background-color: #fff;
+    border: 1px solid #2f2f2f;
+    padding: 5px 15px;
+}
+.add-to-cart-2 {
+    background-color: hsl(14, 86%, 42%);
+    color: #fff;
+    padding: 10px 15px;
+}
+.add-to-cart-2:hover {
+    background-color: tomato;
+}
+.plus, .minus {
+    display: block;
+    width: 20px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+.cart-icon, .cart-icon-1 {
+    margin-right: 10px;
+}
+.add-to-cart:hover {
+    background-color: tomato;
+}
+.product-details {
+    line-height: 1.5;
+    font-size: 16px;
+}
+.product-name {
+    color: hsl(12, 20%, 44%);
+}
+.price-tag {
+    color: hsl(14, 86%, 42%);
+    font-weight: bold;
+}
+.section-4 {
+    width: 250px;
+    padding: 30px;
+    background-color: #fff;
+}
+h3 {
+    color: hsl(14, 86%, 42%);
+}
+.your-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.text {
+    color: hsl(14, 86%, 42%);
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.total h4 {
+    font-size: 20px;
+    color: #928e8e;
+}
+.total-price {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.carbon {
+    background-color: hwb(11 87% 0% / 0.63);
+    font-size: 15px;
+    padding: 10px;
+}
+.carbon-neutral {
+    font-weight: bold;
+}
+.confirm {
+    display: block;
+    width: 250px;
+    background-color: hsl(14, 86%, 42%);
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+.your-cart img {
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+
+
+.mentor-link{
+   margin-top: 40px;
+   background-color: rgb(15, 15, 3);
+   padding: 20px;
+   text-align: center;
+   color: #fff;
+}
+.mentor-link a{
+ font-size: 15px;
+   color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens 700px and below */
+@media (max-width: 700px) {
+    .card-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .card-image, .product-image-1, .product-image-2 {
+        width: 150px;
+    }
+    .section-4 {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* For screens 600px and below */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    .product-details {
+        font-size: 14px;
+    }
+    .add-to-cart, .add-to-cart-2 {
+        width: 80%;
+        padding: 8px;
+    }
+    .card-image, .product-image-1, .product-image-2 {
+        width: 130px;
+    }
+    .section-4 {
+        width: 85%;
+    }
+}
+
+/* For screens 400px and below */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+    .product-details {
+        font-size: 12px;
+    }
+    .add-to-cart, .add-to-cart-2 {
+        width: 100%;
+        padding: 6px;
+    }
+    .card-image, .product-image-1, .product-image-2 {
+        width: 100px;
+    }
+    .section-4 {
+        width: 80%;
+    }
+    .total h4, .total-price {
+        font-size: 16px;
+    }
+}
